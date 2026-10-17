@@ -1,0 +1,21 @@
+:root {
+  color-scheme: light dark;
+  --bg: #faf7f2; --fg: #1e2a28; --muted: #5a6b68; --card: #ffffff; --accent: #1f7a6d; --todo: #fff1d9;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #121816; --fg: #e8efed; --muted: #9db0ac; --card: #1c2522; --accent: #3fb8a5; --todo: #3a2d14; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.65 system-ui, "Segoe UI", Tahoma, Arial, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 18px 64px; }
+h1 { font-size: 1.6rem; margin: 0 0 4px; }
+h2 { font-size: 1.15rem; margin: 28px 0 6px; color: var(--accent); }
+p, li { margin: 8px 0; }
+ul { padding-inline-start: 22px; }
+a { color: var(--accent); }
+nav { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 12px 0 8px; font-weight: 600; }
+.card { background: var(--card); border-radius: 14px; padding: 6px 18px 14px; margin: 18px 0; box-shadow: 0 1px 6px rgba(0,0,0,.08); }
+.muted { color: var(--muted); font-size: .9rem; }
+mark.todo { background: var(--todo); color: inherit; padding: 1px 6px; border-radius: 6px; }
+section[lang="ar"] { font-family: "Noto Naskh Arabic", "Segoe UI", Tahoma, Arial, sans-serif; font-size: 1.05rem; line-height: 1.9; }
+hr { border: 0; border-top: 1px solid rgba(128,128,128,.3); margin: 36px 0; }
